@@ -5,7 +5,7 @@ Get Anaconda and ROS running together on Ubuntu 16.04
 
 2) Set default python version to python 2.7
 
-  a) conda update conda
+  a. conda update conda
 
   b) conda install python=2.7
 
