@@ -1,13 +1,15 @@
 # Anaconda-with-ROS-Installation-Guide
 Get Anaconda and ROS running together on Ubuntu 16.04
 
-Set default python version to python 2.7
+1) Install Anaconda: https://conda.io/docs/user-guide/install/linux.html
 
-conda update conda
+2) Set default python version to python 2.7
 
-conda install python=2.7
+a) conda update conda
 
-Install ROS again
+b) conda install python=2.7
+
+3) Install ROS
 
 (Skip a,b if ROS was installed earlier)
 
@@ -19,20 +21,20 @@ c) sudo apt-get update
 
 d) sudo apt-get install ros-kinetic-desktop-full
 
-e) Install catkin_pkg
+4) Install catkin_pkg
 
-conda install -c auto catkin_pkg 
+a) conda install -c auto catkin_pkg 
 
-f) Install extra dependencies
+5) Install extra dependencies
 
-pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools
+a) pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools
 
-pip install msgpack
+b) pip install msgpack
 
-pip install empy
+c) pip install empy
 
 DONT: pip install em - it confuses em for empy and catkin_make doesn’t work
 
-g) Source it:
+6) Source it:
 
-source /opt/ros/kinetic/setup.bash
+a) source /opt/ros/kinetic/setup.bash
