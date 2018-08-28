@@ -5,19 +5,19 @@ Get Anaconda and ROS running together on Ubuntu 16.04
 
 2) Set default python version to python 2.7
 
-a) conda update conda
+  a) conda update conda
 
-b) conda install python=2.7
+  b) conda install python=2.7
 
 3) Install ROS
 
-(Skip a,b if ROS was installed earlier)
+  (Skip a,b if ROS was installed earlier)
 
-a) sudo -E sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+  a) sudo -E sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-b) sudo -E apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+  b) sudo -E apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 
-c) sudo apt-get update
+  c) sudo apt-get update
 
 d) sudo apt-get install ros-kinetic-desktop-full
 
