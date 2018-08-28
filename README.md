@@ -2,8 +2,11 @@
 Get Anaconda and ROS running together on Ubuntu 16.04
 
 Set default python version to python 2.7
+
 conda update conda
+
 conda install python=2.7
+
 Install ROS again
 (Skip a,b if ROS was installed earlier)
 sudo -E sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
