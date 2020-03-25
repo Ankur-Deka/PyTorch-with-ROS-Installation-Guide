@@ -26,3 +26,7 @@ Get Anaconda and ROS running together on Ubuntu 16.04
 
 1. Source it:
    1. source /opt/ros/kinetic/setup.bash
+   
+1. Intitialize rosdep:
+   1. sudo rosdep init
+   1. rosdep update
