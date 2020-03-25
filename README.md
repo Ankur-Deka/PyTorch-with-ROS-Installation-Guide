@@ -1,7 +1,7 @@
 # Anaconda-with-ROS-Installation-Guide
 Get Anaconda and ROS running together on Ubuntu 16.04
 
-1. Install Anaconda: https://conda.io/docs/user-guide/install/linux.html
+1. Install Anaconda: https://docs.anaconda.com/anaconda/install/linux/
 
 1. Set default python version to python 2.7
    1. conda update conda
