@@ -18,6 +18,7 @@ Get Anaconda and ROS running together on Ubuntu 16.04
    1. conda install -c auto catkin_pkg 
 
 1. Install extra dependencies
+   1. conda install pip
    1. pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools
    1. pip install msgpack
    1. pip install empy
