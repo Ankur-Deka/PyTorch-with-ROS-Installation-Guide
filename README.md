@@ -4,29 +4,33 @@ Get Anaconda and ROS running together on Ubuntu 16.04
 1. Install Anaconda: https://docs.anaconda.com/anaconda/install/linux/
 
 1. Set default python version to python 2.7
-   1. conda update conda
-   1. conda install python=2.7
-
+```shell
+ conda update conda
+ conda install python=2.7
+```
 1. Install ROS
-   (Skip i,ii if ROS was installed earlier)
-   1. sudo -E sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-   1. sudo -E apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
-   1. sudo apt-get update
-   1. sudo apt-get install ros-kinetic-desktop-full
-
+   (Skip first 2 lines if ROS was installed earlier)
+```shell
+sudo -E sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo -E apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt-get update
+sudo apt-get install ros-kinetic-desktop-full
+```
 1. Install catkin_pkg
-   1. conda install -c auto catkin_pkg 
-
+```shell
+conda install -c auto catkin_pkg 
+```
 1. Install extra dependencies
-   1. conda install pip
-   1. pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools
-   1. pip install msgpack
-   1. pip install empy
-   DONT: pip install em - it confuses em for empy and catkin_make doesn’t work
-
+```shell
+conda install pip
+pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools msgpack empy
+```
+DONT: `pip install em` - it confuses em for empy and catkin_make doesn’t work
 1. Source it:
-   1. source /opt/ros/kinetic/setup.bash
-   
+   1. `source /opt/ros/kinetic/setup.bash`
+   1. For sourcing permanently: `sudo gedit ~/.bashrc` and add the above line to the end of the file. Then run `source ~/.bashrc`
 1. Intitialize rosdep:
-   1. sudo rosdep init
-   1. rosdep update
+```shell
+sudo rosdep init
+rosdep update
+```
