@@ -22,6 +22,7 @@ conda install -c auto catkin_pkg
 ```
 1. Install extra dependencies
 ```shell
+sudo apt install python-rosdep
 conda install pip
 pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools msgpack empy
 ```
