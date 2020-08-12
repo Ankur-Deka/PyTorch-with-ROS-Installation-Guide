@@ -16,15 +16,15 @@ sudo -E apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 4
 sudo apt-get update
 sudo apt-get install ros-kinetic-desktop-full
 ```
-1. Install catkin_pkg
+1. Install rospkg and catkin_pkg
 ```shell
-conda install -c auto catkin_pkg 
+conda install -c conda-forge rospkg catkin_pkg 
 ```
 1. Install extra dependencies
 ```shell
 sudo apt install python-rosdep
 conda install pip
-pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools msgpack empy
+pip install -U rosinstall_generator wstool rosinstall six vcstools msgpack empy
 ```
 DONT: `pip install em` - it confuses em for empy and catkin_make doesn’t work
 1. Source it:
